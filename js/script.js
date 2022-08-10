@@ -4,22 +4,23 @@ window.onload = function() {
   
   form.onsubmit = function(e) {
     e.preventDefault();
+    hideResults();
   
-  
-    let over18 = document.getElementById("over_18");
-    over18.setAttribute("class", "hidden");
-    let under18 = document.getElementById("under_18");
-    under18.setAttribute("class", "hidden");
+    let over50 = document.getElementById("over_50");
+    over50.setAttribute("class", "hidden");
+    let under50 = document.getElementById("under_50");
+    under50.setAttribute("class", "hidden");
   
     const age = parseInt(document.querySelector("input#age").value);
+    let 
   
-    if (age >= 18) {
-      over18.removeAttribute("class");
+    if (age >= 50) {
+      over50.removeAttribute("class");
     } 
-  
+      if (age <=50 &&  )
       else {
   
-       under18.removeAttribute("class");
+      under18.removeAttribute("class");
   
       }
     };
